@@ -1,55 +1,53 @@
-# LEMON Manuals (lemon-manuals.la/Toyota)
+# LEMON Manuals
 
-Catalog used: https://lemon-manuals.la/Toyota/
+Catalogs:
+- Toyota chassis: https://lemon-manuals.la/Toyota/
+- Scion donor: https://lemon-manuals.la/Scion/
 
-LEMON is a free service-manual library (CHARM-era books plus later years). Wiring plates live under each vehicle's Repair and Diagnosis tree. This repo does **not** republish those OEM sheets. Use the links below next to the swap diagrams in FIGURES.md.
+This repo does **not** republish OEM wiring plates. Use the links next to FIGURES.md.
 
-## Chassis book (what you are wiring into)
+## Donor book (Scion xD, 2ZR-FE) — use this for Path B
 
-XP90 Yaris, 1NZ-FE body / fusebox / cluster / ABS / VSS:
+xD is listed under **Scion**, not Toyota:
+
+- Make index: https://lemon-manuals.la/Scion/
+- 2008 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2008/xD%20L4-1.8L%20%282ZR-FE%29/
+- 2009 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2009/xD%20L4-1.8L%20%282ZR-FE%29/
+- 2010 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2010/xD%20L4-1.8L%20%282ZR-FE%29/
+
+Year lists:
+- https://lemon-manuals.la/Scion/2008/
+- https://lemon-manuals.la/Scion/2009/
+- https://lemon-manuals.la/Scion/2010/
+
+Open the year that matches the donor harness / ECM. Inside the book pull:
+
+- Engine Control (2ZR-FE) — MAF +12 V, CA2 pin 9
+- ABS / VSC connector A15 — speed-out (forum working cavity is **4**, after trying 11 w/ VSC and 22 w/o VSC)
+- Automatic transaxle connector — cavity 9 empty, blue wire in cavity 10
+- Power source / EFI
+
+Do **not** use Scion tC or xB books (those are 2AZ-FE).
+
+## Chassis book (Yaris XP90 you are wiring into)
 
 - 2010 Yaris L4-1.5L (1NZ-FE): https://lemon-manuals.la/Toyota/2010/Yaris%20L4-1.5L%20%281NZ-FE%29/
 - Year index: https://lemon-manuals.la/Toyota/2010/
-- 2012 Yaris Hatchback L4-1.5L (1NZ-FE): listed at https://lemon-manuals.la/Toyota/2012/
 
-Inside the 2010 Yaris book, look for:
+Look for Combination Meter (pink VSS into cluster), Power Source / EFI-2, Yaris auto VSS if Path A.
 
-- Wiring Diagrams / System Wiring Diagrams
-- Engine Control (1NZ-FE) — MAF, EFI power
-- Combination Meter — vehicle speed input (the pink VSS wire Path B splices into)
-- ABS / VSC — speed-signal output (Path B donor idea; confirm pin 4 on the **xD** ABS connector, not this Yaris book)
-- Power Source / EFI, EFI-2 fuses
-- Electronically Controlled Transmission — Yaris auto VSS on top of the case (Path A)
+Skip the 2020 Yaris LE sedan book — that is the Mazda XP150.
 
-## Do not use this Yaris book for the swap
+## How this lines up
 
-- 2020 Yaris LE sedan: https://lemon-manuals.la/Toyota/2020/Yaris%20LE%2C%204D%20Sedan%2C%20Standard%20Trans/Repair%20and%20Diagnosis%20%28Single%20Page%29/
-
-That is the Mazda-built XP150 sedan (P5 engine control, 07/2015+ procedures). Wrong car.
-
-## Donor engine / harness book (2ZR-FE)
-
-The xD / Corolla 2ZR-FE electrical is **not** in the 2010 Yaris 1NZ book. On LEMON, start at https://lemon-manuals.la/Toyota/ and open:
-
-- 2009–2013 Corolla 1.8 2ZR-FE (same engine family as the xD donor)
-- 2010 Prius 2ZR-FXE is hybrid only — different harness, skip it for this swap
-
-Confirm the book title says **2ZR-FE**, then pull:
-
-- Engine Control (2ZR-FE) — MAF +12 V on CA2 pin 9
-- ABS / VSC connector A15 — speed-out pin (forum found working cavity **4** after trying 11 / 22)
-- Automatic transaxle connector — cavity 9 empty / cavity 10 blue on the xD harness
-
-## How this lines up with the swap notes
-
-| Swap step | Forum source | LEMON book to open |
+| Swap step | Forum | LEMON |
 |---|---|---|
-| MAF has no Yaris fusebox pin | brushforhire t=56678 #4; ArmstrongRacing t=56031 CA2#9 | 2010 Yaris 1NZ power-source + 2ZR-FE engine-control |
-| EFI-2 not headlamp | tmontague t=61572 | 2010 Yaris fuse / power source |
-| VSS 3-wire move | t=56678 #4 | 2010 Yaris ECT / VSS + xD/Corolla 2ZR engine harness |
-| Cavity 9 ground | t=56678 #4; t=56233 #51 | xD/Corolla trans connector end view |
-| ABS pin 4 + pigtail 82998-12720 | t=56678; t=56233 23 May 2016 | xD ABS connector end view |
+| MAF / CA2 #9 | t=56678 #4; t=56031 | 2008–2010 Scion xD Engine Control |
+| EFI-2 fuse tap | t=61572 | 2010 Yaris power source |
+| VSS 3-wire move | t=56678 #4 | Yaris ECT + xD harness |
+| Cavity 9 ground | t=56678 #4; t=56233 #51 | xD trans connector end view |
+| ABS pin 4 + 82998-12720 | t=56678; t=56233 | xD ABS connector end view |
 
 ## Citation
 
-LEMON Manuals, Toyota index, https://lemon-manuals.la/Toyota/ (retrieved 14 Sep 2026). Individual vehicle pages as linked above. OEM artwork remains Toyota's; LEMON is the access copy.
+LEMON Manuals, Scion index https://lemon-manuals.la/Scion/ and Toyota index https://lemon-manuals.la/Toyota/ (retrieved 14 Sep 2026). OEM artwork remains Toyota/Scion; LEMON is the access copy.
