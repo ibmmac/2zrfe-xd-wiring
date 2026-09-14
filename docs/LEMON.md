@@ -1,53 +1,55 @@
-# LEMON Manuals
+# LEMON Manuals — this swap
+
+**Cars:** 2010 Toyota Yaris hatchback (chassis) + 2009 Scion xD 2ZR-FE (donor harness / ECM / engine).
 
 Catalogs:
-- Toyota chassis: https://lemon-manuals.la/Toyota/
-- Scion donor: https://lemon-manuals.la/Scion/
+- Toyota 2010: https://lemon-manuals.la/Toyota/2010/
+- Scion 2009: https://lemon-manuals.la/Scion/2009/
 
-This repo does **not** republish OEM wiring plates. Use the links next to FIGURES.md.
+This repo does **not** republish OEM plates.
 
-## Donor book (Scion xD, 2ZR-FE) — use this for Path B
+## 2009 Scion xD (donor)
 
-xD is listed under **Scion**, not Toyota:
+Engine-family book (use this first):
+- https://lemon-manuals.la/Scion/2009/xD%20L4-1.8L%20%282ZR-FE%29/
 
-- Make index: https://lemon-manuals.la/Scion/
-- 2008 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2008/xD%20L4-1.8L%20%282ZR-FE%29/
-- 2009 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2009/xD%20L4-1.8L%20%282ZR-FE%29/
-- 2010 xD L4-1.8L (2ZR-FE): https://lemon-manuals.la/Scion/2010/xD%20L4-1.8L%20%282ZR-FE%29/
-
-Year lists:
-- https://lemon-manuals.la/Scion/2008/
+Year list (ignore tC / xB — those are 2AZ-FE):
 - https://lemon-manuals.la/Scion/2009/
-- https://lemon-manuals.la/Scion/2010/
 
-Open the year that matches the donor harness / ECM. Inside the book pull:
-
+Open in that book:
 - Engine Control (2ZR-FE) — MAF +12 V, CA2 pin 9
-- ABS / VSC connector A15 — speed-out (forum working cavity is **4**, after trying 11 w/ VSC and 22 w/o VSC)
-- Automatic transaxle connector — cavity 9 empty, blue wire in cavity 10
+- ABS / VSC connector A15 — speed-out. Forum working cavity is **4** (tried 11 w/ VSC and 22 w/o VSC first)
+- Auto transaxle connector — add ground in cavity **9**, leave the blue wire in **10**
 - Power source / EFI
 
-Do **not** use Scion tC or xB books (those are 2AZ-FE).
+Pigtail P/N **82998-12720** for the ABS pin.
 
-## Chassis book (Yaris XP90 you are wiring into)
+## 2010 Yaris hatch (chassis)
 
-- 2010 Yaris L4-1.5L (1NZ-FE): https://lemon-manuals.la/Toyota/2010/Yaris%20L4-1.5L%20%281NZ-FE%29/
-- Year index: https://lemon-manuals.la/Toyota/2010/
+Engine-family book (1NZ fusebox / cluster / body):
+- https://lemon-manuals.la/Toyota/2010/Yaris%20L4-1.5L%20%281NZ-FE%29/
 
-Look for Combination Meter (pink VSS into cluster), Power Source / EFI-2, Yaris auto VSS if Path A.
+Body-style books on the same year page:
+- 2D Hatch Automatic: https://lemon-manuals.la/Toyota/2010/Yaris%202D%20Hatchback%2C%20Automatic/
+- 2D Hatch Standard: https://lemon-manuals.la/Toyota/2010/Yaris%202D%20Hatchback%2C%20Standard/
+- 4D Hatch Automatic: https://lemon-manuals.la/Toyota/2010/Yaris%204D%20Hatchback%2C%20Automatic/
+- 4D Hatch Standard: https://lemon-manuals.la/Toyota/2010/Yaris%204D%20Hatchback%2C%20Standard/
 
-Skip the 2020 Yaris LE sedan book — that is the Mazda XP150.
+Year index: https://lemon-manuals.la/Toyota/2010/
 
-## How this lines up
+Open in the Yaris book:
+- Power Source / EFI-2 (ignition, not headlamp)
+- Combination Meter — pink vehicle-speed input that Path B splices into
+- ECT / VSS if you keep the Yaris auto (Path A, move 3 pins)
 
-| Swap step | Forum | LEMON |
-|---|---|---|
-| MAF / CA2 #9 | t=56678 #4; t=56031 | 2008–2010 Scion xD Engine Control |
-| EFI-2 fuse tap | t=61572 | 2010 Yaris power source |
-| VSS 3-wire move | t=56678 #4 | Yaris ECT + xD harness |
-| Cavity 9 ground | t=56678 #4; t=56233 #51 | xD trans connector end view |
-| ABS pin 4 + 82998-12720 | t=56678; t=56233 | xD ABS connector end view |
+Do not use sedan books unless the car is a sedan. Do not use the 2020 Yaris LE book (Mazda XP150).
+
+## Path picker
+
+- Path A — keep Yaris auto: Yaris VSS 3-wire move + cavity 9 ground on the xD harness connector.
+- Path B — xD trans: ABS pin 4 → pink VSS toward Yaris fusebox/cluster; leftover VSS +12 V can feed MAF.
+- Path C — Yaris manual: unconfirmed; treat like Path A until mapped.
 
 ## Citation
 
-LEMON Manuals, Scion index https://lemon-manuals.la/Scion/ and Toyota index https://lemon-manuals.la/Toyota/ (retrieved 14 Sep 2026). OEM artwork remains Toyota/Scion; LEMON is the access copy.
+LEMON Manuals, 2010 Toyota Yaris and 2009 Scion xD pages linked above (retrieved 14 Sep 2026). Forum wiring: brushforhire, YarisWorld t=56678 post #4 and t=56233. OEM artwork remains Toyota/Scion.
