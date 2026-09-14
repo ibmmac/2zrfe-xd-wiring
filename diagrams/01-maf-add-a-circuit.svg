@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" width="760" height="280">
+  <rect width="760" height="280" fill="#f4f7f8"/>
+  <text x="20" y="28" font-family="Georgia, serif" font-size="16" fill="#1B3A4B">MAF switched +12 V - do not use a constant-hot fuse</text>
+  <rect x="20" y="50" width="220" height="190" rx="8" fill="#fff" stroke="#2E5A6C"/>
+  <text x="36" y="74" font-family="Georgia, serif" font-size="13" fill="#1B3A4B">xD engine harness</text>
+  <text x="36" y="96" font-family="Georgia, serif" font-size="12" fill="#333">Black w/ silver speckles</text>
+  <text x="36" y="114" font-family="Georgia, serif" font-size="12" fill="#333">= MAF +12 V pin</text>
+  <text x="36" y="140" font-family="Georgia, serif" font-size="12" fill="#C45C26">Pop this pin out of the</text>
+  <text x="36" y="156" font-family="Georgia, serif" font-size="12" fill="#C45C26">fusebox connector.</text>
+  <text x="36" y="186" font-family="Georgia, serif" font-size="11" fill="#5A6B72">Original: MAF sensor wire.JPG</text>
+  <text x="36" y="202" font-family="Georgia, serif" font-size="11" fill="#5A6B72">Att. 57100</text>
+  <path d="M250 145 H310" stroke="#C45C26" stroke-width="3"/>
+  <polygon points="310,139 328,145 310,151" fill="#C45C26"/>
+  <rect x="340" y="50" width="190" height="190" rx="8" fill="#fff" stroke="#2E5A6C"/>
+  <text x="356" y="74" font-family="Georgia, serif" font-size="13" fill="#1B3A4B">Mini add-a-circuit</text>
+  <text x="356" y="100" font-family="Georgia, serif" font-size="12" fill="#333">Tap EFI-2</text>
+  <text x="356" y="118" font-family="Georgia, serif" font-size="12" fill="#333">(ignition-switched)</text>
+  <text x="356" y="150" font-family="Georgia, serif" font-size="12" fill="#C45C26">NOT headlamp fuse</text>
+  <text x="356" y="168" font-family="Georgia, serif" font-size="12" fill="#C45C26">(stays hot, ECU awake)</text>
+  <text x="356" y="202" font-family="Georgia, serif" font-size="11" fill="#5A6B72">Att. 57162</text>
+  <path d="M540 145 H600" stroke="#C45C26" stroke-width="3"/>
+  <polygon points="600,139 618,145 600,151" fill="#C45C26"/>
+  <rect x="630" y="50" width="110" height="190" rx="8" fill="#1B3A4B"/>
+  <text x="648" y="140" font-family="Georgia, serif" font-size="14" fill="#fff">MAF</text>
+  <text x="648" y="160" font-family="Georgia, serif" font-size="12" fill="#D7E2E6">+12 V IGN</text>
+</svg>

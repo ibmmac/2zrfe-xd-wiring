@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260">
+  <rect width="760" height="260" fill="#f4f7f8"/>
+  <text x="20" y="28" font-family="Georgia, serif" font-size="16" fill="#1B3A4B">Path A - move 3 VSS pins, same cavities</text>
+  <rect x="20" y="48" width="220" height="190" rx="8" fill="#fff" stroke="#2E5A6C"/>
+  <text x="36" y="72" font-family="Georgia, serif" font-size="13" fill="#1B3A4B">Yaris trans VSS</text>
+  <circle cx="70" cy="130" r="28" fill="#eee" stroke="#2E5A6C"/>
+  <text x="58" y="134" font-family="Georgia, serif" font-size="11" fill="#333">VSS</text>
+  <text x="110" y="118" font-family="Georgia, serif" font-size="11" fill="#333">3 wires</text>
+  <text x="110" y="134" font-family="Georgia, serif" font-size="11" fill="#333">on top of case</text>
+  <text x="36" y="200" font-family="Georgia, serif" font-size="11" fill="#5A6B72">57102 / 57101</text>
+  <path d="M250 140 H310" stroke="#C45C26" stroke-width="3"/>
+  <polygon points="310,134 328,140 310,146" fill="#C45C26"/>
+  <rect x="340" y="48" width="180" height="190" rx="8" fill="#fff" stroke="#2E5A6C"/>
+  <text x="356" y="72" font-family="Georgia, serif" font-size="13" fill="#1B3A4B">Old white plug</text>
+  <text x="356" y="100" font-family="Georgia, serif" font-size="12" fill="#333">Lift retainer</text>
+  <text x="356" y="118" font-family="Georgia, serif" font-size="12" fill="#333">Needle the barbs</text>
+  <text x="356" y="136" font-family="Georgia, serif" font-size="12" fill="#333">Pull 3 pins</text>
+  <text x="356" y="200" font-family="Georgia, serif" font-size="11" fill="#5A6B72">57104 / 57105 / 57103</text>
+  <path d="M530 140 H590" stroke="#C45C26" stroke-width="3"/>
+  <polygon points="590,134 608,140 590,146" fill="#C45C26"/>
+  <rect x="620" y="48" width="120" height="190" rx="8" fill="#1B3A4B"/>
+  <text x="636" y="120" font-family="Georgia, serif" font-size="13" fill="#fff">xD plug</text>
+  <text x="636" y="140" font-family="Georgia, serif" font-size="12" fill="#D7E2E6">same holes</text>
+  <text x="636" y="200" font-family="Georgia, serif" font-size="11" fill="#D7E2E6">57108 / 57107</text>
+</svg>
